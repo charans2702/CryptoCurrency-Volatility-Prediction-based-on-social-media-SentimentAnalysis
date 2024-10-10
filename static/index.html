@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Volatility Forecast</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <h1> Cryptocurrency Volatility Forecast</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#historical-data">Historical Data</a></li>
+            <li><a href="#volatility-forecast">Volatility Forecast</a></li>
+            <li><a href="#sentiment-analysis">Sentiment Analysis</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="historical-data">
+            <h2>Historical Data</h2>
+            <div class="chart-container">
+                <canvas id="historicalChart"></canvas>
+            </div>
+        </section>
+
+        <section id="volatility-forecast">
+            <h2>Volatility Forecast</h2>
+            <div id="forecast-result"></div>
+        </section>
+
+        <section id="sentiment-analysis">
+            <h2>Sentiment Analysis</h2>
+            <div id="sentiment-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bitcoin Volatility Forecast</p>
+    </footer>
+</body>
+</html>
